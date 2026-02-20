@@ -53,10 +53,46 @@ class _loginState extends State<login> {
                     color: Color(0xff55AB60),
                   ),
                 ),
-                SizedBox(height: 10),
+                SizedBox(height: 20),
+                //Email id
                 Text(
                   "Email id",
                   style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+                ),
+                SizedBox(height: 10),
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "Enter your email id",
+                    filled: true,
+                    fillColor: Colors.white,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.black),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 20),
+                Text(
+                  "Password",
+                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+                ),
+                SizedBox(height: 10),
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "Enter your password",
+                    filled: true,
+                    fillColor: Colors.white,
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide(color: Colors.black),
+                    ),
+                  ),
                 ),
               ],
             ),
