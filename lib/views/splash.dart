@@ -10,11 +10,15 @@ class splash extends StatefulWidget {
 class _splashState extends State<splash> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("splash")),
-    body: 
-      Center(
-        child: Image.asset("assets/images/splash.jpg")
-      )
-      ,);
+    return Scaffold(
+      backgroundColor: Colors.white,
+      // appBar: AppBar(title: Text("splash")),
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 20),
+          child: Image.asset("assets/images/splash.jpg"),
+        ),
+      ),
+    );
   }
 }
