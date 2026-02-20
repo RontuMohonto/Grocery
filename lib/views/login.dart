@@ -135,19 +135,31 @@ class _loginState extends State<login> {
                     ),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Container(height: 1, width: 30, color: Color(0xff858FAD)),
-                    Text(
-                      'Or continue with',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 14,
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 18, vertical: 5),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        height: 1,
+                        width: 100,
                         color: Color(0xff858FAD),
                       ),
-                    ),
-                  ],
+                      Text(
+                        'Or continue with',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w400,
+                          fontSize: 14,
+                          color: Color(0xff858FAD),
+                        ),
+                      ),
+                      Container(
+                        height: 1,
+                        width: 100,
+                        color: Color(0xff858FAD),
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
