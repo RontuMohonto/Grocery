@@ -39,6 +39,28 @@ class _loginState extends State<login> {
               ],
             ),
           ),
+          //Login text
+          Padding(
+            padding: const EdgeInsets.only(left: 20, top: 10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Login",
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xff55AB60),
+                  ),
+                ),
+                SizedBox(height: 10),
+                Text(
+                  "Email id",
+                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
