@@ -20,6 +20,27 @@ class _loginState extends State<login> {
           children: [Image(image: AssetImage("assets/images/Appbar.jpg"))],
         ),
       ),
+      body: ListView(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 50),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage("assets/images/login.jpg"),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
