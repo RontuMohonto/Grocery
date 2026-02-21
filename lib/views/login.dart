@@ -164,11 +164,12 @@ class _loginState extends State<login> {
                 SizedBox(height: 10),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+                  //google and facebook
                   child: Row(
                     children: [
                       Container(
                         height: 50,
-                        width: 183,
+                        width: 180,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(color: Color(0xff55AB60)),
@@ -182,6 +183,34 @@ class _loginState extends State<login> {
                             ),
                             Text(
                               "Google",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w500,
+                                color: Color(0xff626262),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Container(
+                        height: 50,
+                        width: 180,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          border: Border.all(color: Color(0xff55AB60)),
+                        ),
+                        child: Row(
+                          spacing: 5,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Image(
+                              image: AssetImage("assets/images/fb.jpg"),
+                            ),
+                            Text(
+                              "facebook",
                               style: TextStyle(
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
