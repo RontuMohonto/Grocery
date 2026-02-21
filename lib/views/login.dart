@@ -192,9 +192,7 @@ class _loginState extends State<login> {
                           ],
                         ),
                       ),
-                      SizedBox(
-                        width: 17,
-                      ),
+                      SizedBox(width: 17),
                       Container(
                         height: 50,
                         width: 175,
@@ -206,9 +204,7 @@ class _loginState extends State<login> {
                           spacing: 5,
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Image(
-                              image: AssetImage("assets/images/fb.jpg"),
-                            ),
+                            Image(image: AssetImage("assets/images/fb.jpg")),
                             Text(
                               "facebook",
                               style: TextStyle(
@@ -222,6 +218,28 @@ class _loginState extends State<login> {
                       ),
                     ],
                   ),
+                ),
+                //dont you have an account ?
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Don't you Have an Account ?",
+                      style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        fontSize: 16,
+                        color: Color(0xff858FAD),
+                      ),
+                    ),
+                    Text(
+                      "Reister",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
