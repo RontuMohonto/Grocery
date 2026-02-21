@@ -163,13 +163,13 @@ class _loginState extends State<login> {
                 ),
                 SizedBox(height: 10),
                 Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                   //google and facebook
                   child: Row(
                     children: [
                       Container(
                         height: 50,
-                        width: 175,
+                        width: 170,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(color: Color(0xff55AB60)),
@@ -195,7 +195,7 @@ class _loginState extends State<login> {
                       SizedBox(width: 17),
                       Container(
                         height: 50,
-                        width: 175,
+                        width: 170,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(color: Color(0xff55AB60)),
@@ -220,6 +220,9 @@ class _loginState extends State<login> {
                   ),
                 ),
                 //dont you have an account ?
+                SizedBox(
+                  height: 10,
+                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -232,7 +235,7 @@ class _loginState extends State<login> {
                       ),
                     ),
                     Text(
-                      "Reister",
+                      " Reister",
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,
