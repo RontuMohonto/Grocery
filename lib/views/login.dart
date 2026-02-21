@@ -116,22 +116,27 @@ class _loginState extends State<login> {
                     horizontal: 20,
                     vertical: 10,
                   ),
-                  child: Container(
-                    child: Center(
-                      child: Text(
-                        "Login",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.white,
+                  child: InkWell(
+                    onTap: (){
+                      log("=========Pressed");
+                    },
+                    child: Container(
+                      child: Center(
+                        child: Text(
+                          "Login",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                    ),
-                    height: 50,
-                    width: 396,
-                    decoration: BoxDecoration(
-                      color: Color(0xff55AB60),
-                      borderRadius: BorderRadius.circular(10),
+                      height: 50,
+                      width: 396,
+                      decoration: BoxDecoration(
+                        color: Color(0xff55AB60),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
                     ),
                   ),
                 ),
