@@ -169,7 +169,7 @@ class _loginState extends State<login> {
                     children: [
                       Container(
                         height: 50,
-                        width: 180,
+                        width: 175,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(color: Color(0xff55AB60)),
@@ -193,11 +193,11 @@ class _loginState extends State<login> {
                         ),
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 17,
                       ),
                       Container(
                         height: 50,
-                        width: 180,
+                        width: 175,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(color: Color(0xff55AB60)),
