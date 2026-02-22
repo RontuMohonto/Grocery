@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:grocery_demo/views/Login/login.dart';
 import 'package:grocery_demo/views/Registration/reg.dart';
@@ -14,7 +16,7 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: reg(),
+      home: login(),
     );
   }
 }

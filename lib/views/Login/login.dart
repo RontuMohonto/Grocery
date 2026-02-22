@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:grocery_demo/views/Registration/reg.dart';
 import 'package:grocery_demo/widgets/button_widget.dart';
 
 class login extends StatefulWidget {
@@ -120,6 +121,7 @@ class _loginState extends State<login> {
                   child: InkWell(
                     onTap: () {
                       log("=========Pressed");
+                      Navigator.push(context, MaterialPageRoute(builder: (_)=> reg()));
                     },
                     child: button(name: 'Login',),
                   ),
