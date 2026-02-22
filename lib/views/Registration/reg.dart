@@ -20,6 +20,22 @@ class _regState extends State<reg> {
           children: [Image(image: AssetImage("assets/images/Appbar.jpg"))],
         ),
       ),
+      body: ListView(
+        children: [
+          Column(
+            children: [
+              Text(
+                "Register",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.w600,
+                  color: Color(0xff55AB60),
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
