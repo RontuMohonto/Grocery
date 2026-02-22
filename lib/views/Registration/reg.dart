@@ -48,7 +48,7 @@ class _regState extends State<reg> {
                   children: [
                     //Hint text
                     Padding(
-                      padding: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(5),
                       //Name
                       child: Text(
                         "Your Name",
@@ -58,7 +58,6 @@ class _regState extends State<reg> {
                         ),
                       ),
                     ),
-
                     Padding(
                       padding: const EdgeInsets.all(10),
                       child: TextField(
@@ -76,6 +75,7 @@ class _regState extends State<reg> {
                         ),
                       ),
                     ),
+
                     //Email name
                     Padding(
                       padding: const EdgeInsets.all(5),
@@ -106,22 +106,52 @@ class _regState extends State<reg> {
                       ),
                     ),
 
+                    //Password name
                     Padding(
                       padding: const EdgeInsets.all(4),
                       child: Text(
-                        "Email id",
+                        "Password",
                         style: TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 18,
                         ),
                       ),
                     ),
-                    //Textfield
+                    //Password field
                     Padding(
                       padding: const EdgeInsets.all(4),
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: "Enter your email id",
+                          hintText: "Enter your Password",
+                          filled: true,
+                          fillColor: Colors.white,
+                          enabledBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                            borderSide: BorderSide(color: Colors.black),
+                          ),
+                        ),
+                      ),
+                    ),
+                    //Confirm password text
+                    Padding(
+                      padding: const EdgeInsets.all(4),
+                      child: Text(
+                        "Confirm password",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                    //Confirm password field
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: "Confirm your password",
                           filled: true,
                           fillColor: Colors.white,
                           enabledBorder: OutlineInputBorder(
@@ -135,49 +165,23 @@ class _regState extends State<reg> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(4),
-                      child: Text(
-                        "Email id",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 18,
-                        ),
-                      ),
+                      padding: const EdgeInsets.all(10),
+                      child:
+                          //Contact Number text
+                          Text(
+                            "Contact Number",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w500,
+                              fontSize: 18,
+                            ),
+                          ),
                     ),
-                    //Textfield
+                    //Contact Number field
                     Padding(
                       padding: const EdgeInsets.all(10),
                       child: TextField(
                         decoration: InputDecoration(
-                          hintText: "Enter your email id",
-                          filled: true,
-                          fillColor: Colors.white,
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.black),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Text(
-                        "Email id",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                    //Textfield
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Enter your email id",
+                          hintText: "Enter your Contact Number",
                           filled: true,
                           fillColor: Colors.white,
                           enabledBorder: OutlineInputBorder(
