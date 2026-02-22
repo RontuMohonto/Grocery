@@ -207,6 +207,8 @@ class _regState extends State<reg> {
               style: TextStyle(fontSize: 16, color: Color(0xff858FAD)),
             ),
           ),
+
+          //reg Com
         ],
       ),
     );
