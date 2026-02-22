@@ -25,306 +25,186 @@ class _regState extends State<reg> {
         ),
       ),
       body: ListView(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 2),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                //Register
-                Padding(
-                  padding: const EdgeInsets.all(10),
-                  child: Text(
-                    "Register",
-                    style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xff55AB60),
-                    ),
-                  ),
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    //Hint text
-                    Padding(
-                      padding: const EdgeInsets.all(5),
-                      //Name
-                      child: Text(
-                        "Your Name",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Enter your Name",
-                          filled: true,
-                          fillColor: Colors.white,
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.black),
-                          ),
-                        ),
-                      ),
-                    ),
+          // Register
+          Text(
+            "Register",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.w600,
+              color: Color(0xff55AB60),
+            ),
+          ),
+          SizedBox(height: 20),
 
-                    //Email name
-                    Padding(
-                      padding: const EdgeInsets.all(5),
-                      child: Text(
-                        "Email id",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                    //Email Field
-                    Padding(
-                      padding: const EdgeInsets.all(4),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Enter your email id",
-                          filled: true,
-                          fillColor: Colors.white,
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(14),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.black),
-                          ),
-                        ),
-                      ),
-                    ),
+          // Name
+          Text(
+            "Your Name",
+            style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+          ),
+          SizedBox(height: 8),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Enter your Name",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
 
-                    //Password name
-                    Padding(
-                      padding: const EdgeInsets.all(4),
-                      child: Text(
-                        "Password",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                    //Password field
-                    Padding(
-                      padding: const EdgeInsets.all(4),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Enter your Password",
-                          filled: true,
-                          fillColor: Colors.white,
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.black),
-                          ),
-                        ),
-                      ),
-                    ),
-                    //Confirm password text
-                    Padding(
-                      padding: const EdgeInsets.all(4),
-                      child: Text(
-                        "Confirm password",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 18,
-                        ),
-                      ),
-                    ),
-                    //Confirm password field
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Confirm your password",
-                          filled: true,
-                          fillColor: Colors.white,
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.black),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child:
-                          //Contact Number text
-                          Text(
-                            "Contact Number",
-                            style: TextStyle(
-                              fontWeight: FontWeight.w500,
-                              fontSize: 18,
-                            ),
-                          ),
-                    ),
-                    //Contact Number field
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: TextField(
-                        decoration: InputDecoration(
-                          hintText: "Enter your Contact Number",
-                          filled: true,
-                          fillColor: Colors.white,
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide(color: Colors.black),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+          // Email
+          Text(
+            "Email id",
+            style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+          ),
+          SizedBox(height: 8),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Enter your email id",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
 
-                //bottomPart
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 11,
-                    vertical: 5,
-                  ),
-                  child: InkWell(
-                    onTap: () {
-                      log("=========Pressed");
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (_) => reg()),
-                      );
-                    },
-                    child: button(name: 'Login'),
-                  ),
+          // Password
+          Text(
+            "Password",
+            style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+          ),
+          SizedBox(height: 8),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Enter your Password",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+
+          // Confirm Password
+          Text(
+            "Confirm password",
+            style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+          ),
+          SizedBox(height: 8),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Confirm your password",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          SizedBox(height: 20),
+
+          // Contact Number
+          Text(
+            "Contact Number",
+            style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+          ),
+          SizedBox(height: 8),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Enter your Contact Number",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          SizedBox(height: 25),
+
+          // Login Button
+          SizedBox(
+            width: double.infinity,
+            child: button(name: 'Login'),
+          ),
+
+          SizedBox(height: 25),
+
+          // Divider
+          Row(
+            children: [
+              Expanded(child: Divider(color: Color(0xff858FAD))),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Text(
+                  'Or continue with',
+                  style: TextStyle(fontSize: 14, color: Color(0xff858FAD)),
                 ),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 18, vertical: 5),
+              ),
+              Expanded(child: Divider(color: Color(0xff858FAD))),
+            ],
+          ),
+
+          SizedBox(height: 20),
+
+          // Google and Facebook
+          Row(
+            children: [
+              Expanded(
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Color(0xff55AB60)),
+                  ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
-                        height: 1,
-                        width: 100,
-                        color: Color(0xff858FAD),
-                      ),
+                      Image.asset("assets/images/google.jpg", height: 22),
+                      SizedBox(width: 8),
                       Text(
-                        'Or continue with',
+                        "Google",
                         style: TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                          color: Color(0xff858FAD),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xff626262),
                         ),
-                      ),
-                      Container(
-                        height: 1,
-                        width: 100,
-                        color: Color(0xff858FAD),
                       ),
                     ],
                   ),
                 ),
-                SizedBox(height: 10),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 11, vertical: 5),
-                  //google and facebook
+              ),
+              SizedBox(width: 15),
+              Expanded(
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Color(0xff55AB60)),
+                  ),
                   child: Row(
-                    spacing: 3,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      //google
-                      Container(
-                        height: 50,
-                        width: 170,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: Color(0xff55AB60)),
-                        ),
-                        child: Row(
-                          spacing: 5,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image(
-                              image: AssetImage("assets/images/google.jpg"),
-                            ),
-                            Text(
-                              "Google",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                color: Color(0xff626262),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(width: 17),
-                      //facebook
-                      Container(
-                        height: 50,
-                        width: 170,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: Color(0xff55AB60)),
-                        ),
-                        child: Row(
-                          spacing: 5,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image(image: AssetImage("assets/images/fb.jpg")),
-                            Text(
-                              "facebook",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                color: Color(0xff626262),
-                              ),
-                            ),
-                          ],
+                      Image.asset("assets/images/fb.jpg", height: 22),
+                      SizedBox(width: 8),
+                      Text(
+                        "Facebook",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xff626262),
                         ),
                       ),
                     ],
                   ),
                 ),
-                //dont you have an account ?
-                SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Already Have an Account?",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 16,
-                        color: Color(0xff858FAD),
-                      ),
-                    ),
-                    Text(
-                      " Login",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
+              ),
+            ],
+          ),
+
+          SizedBox(height: 20),
+
+          // Bottom Text
+          Center(
+            child: Text(
+              "Already Have an Account? Login",
+              style: TextStyle(fontSize: 16, color: Color(0xff858FAD)),
             ),
           ),
         ],

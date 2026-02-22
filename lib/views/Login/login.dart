@@ -25,215 +25,156 @@ class _loginState extends State<login> {
         ),
       ),
       body: ListView(
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
         children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 50),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  height: 150,
-                  width: 150,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("assets/images/login.jpg"),
-                    ),
-                  ),
+          // Top Image
+          Center(
+            child: Container(
+              height: 150,
+              width: 150,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/images/login.jpg"),
                 ),
-              ],
+              ),
             ),
           ),
-          //Login text
-          Padding(
-            padding: const EdgeInsets.only(left: 20, top: 10),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  "Login",
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w600,
-                    color: Color(0xff55AB60),
-                  ),
+
+          SizedBox(height: 30),
+
+          // Login Title
+          Text(
+            "Login",
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.w600,
+              color: Color(0xff55AB60),
+            ),
+          ),
+
+          SizedBox(height: 25),
+
+          // Email
+          Text(
+            "Email id",
+            style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+          ),
+          SizedBox(height: 8),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Enter your email id",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+
+          SizedBox(height: 20),
+
+          // Password
+          Text(
+            "Password",
+            style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+          ),
+          SizedBox(height: 8),
+          TextField(
+            decoration: InputDecoration(
+              hintText: "Enter your password",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+
+          SizedBox(height: 25),
+
+          // Login Button
+          SizedBox(
+            width: double.infinity,
+            child: button(name: 'Login'),
+          ),
+
+          SizedBox(height: 25),
+
+          // Divider
+          Row(
+            children: [
+              Expanded(child: Divider(color: Color(0xff858FAD))),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Text(
+                  'Or continue with',
+                  style: TextStyle(fontSize: 14, color: Color(0xff858FAD)),
                 ),
-                SizedBox(height: 20),
-                //Email id
-                Text(
-                  "Email id",
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
-                ),
-                SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 5,
+              ),
+              Expanded(child: Divider(color: Color(0xff858FAD))),
+            ],
+          ),
+
+          SizedBox(height: 20),
+
+          // Google + Facebook
+          Row(
+            children: [
+              Expanded(
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Color(0xff55AB60)),
                   ),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Enter your email id",
-                      filled: true,
-                      fillColor: Colors.white,
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 20),
-                //Password
-                Text(
-                  "Password",
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
-                ),
-                SizedBox(height: 10),
-                //passFeild
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 5,
-                  ),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: "Enter your password",
-                      filled: true,
-                      fillColor: Colors.white,
-                      enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-                        borderSide: BorderSide(color: Colors.black),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(height: 10),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 20,
-                    vertical: 10,
-                  ),
-                  child: InkWell(
-                    onTap: () {
-                      log("=========Pressed");
-                      Navigator.push(context, MaterialPageRoute(builder: (_)=> reg()));
-                    },
-                    child: button(name: 'Login',),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 18, vertical: 5),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
-                        height: 1,
-                        width: 100,
-                        color: Color(0xff858FAD),
-                      ),
+                      Image.asset("assets/images/google.jpg", height: 22),
+                      SizedBox(width: 8),
                       Text(
-                        'Or continue with',
+                        "Google",
                         style: TextStyle(
-                          fontWeight: FontWeight.w400,
-                          fontSize: 14,
-                          color: Color(0xff858FAD),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xff626262),
                         ),
-                      ),
-                      Container(
-                        height: 1,
-                        width: 100,
-                        color: Color(0xff858FAD),
                       ),
                     ],
                   ),
                 ),
-                SizedBox(height: 10),
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-                  //google and facebook
+              ),
+              SizedBox(width: 15),
+              Expanded(
+                child: Container(
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Color(0xff55AB60)),
+                  ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Container(
-                        height: 50,
-                        width: 170,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: Color(0xff55AB60)),
-                        ),
-                        child: Row(
-                          spacing: 5,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image(
-                              image: AssetImage("assets/images/google.jpg"),
-                            ),
-                            Text(
-                              "Google",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                color: Color(0xff626262),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(width: 17),
-                      Container(
-                        height: 50,
-                        width: 170,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: Color(0xff55AB60)),
-                        ),
-                        child: Row(
-                          spacing: 5,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image(image: AssetImage("assets/images/fb.jpg")),
-                            Text(
-                              "facebook",
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
-                                color: Color(0xff626262),
-                              ),
-                            ),
-                          ],
+                      Image.asset("assets/images/fb.jpg", height: 22),
+                      SizedBox(width: 8),
+                      Text(
+                        "Facebook",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xff626262),
                         ),
                       ),
                     ],
                   ),
                 ),
-                //dont you have an account ?
-                SizedBox(height: 10),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Don't you Have an Account ?",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 16,
-                        color: Color(0xff858FAD),
-                      ),
-                    ),
-                    Text(
-                      " Reister",
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
+              ),
+            ],
+          ),
+
+          SizedBox(height: 20),
+
+          // Bottom Text
+          Center(
+            child: Text(
+              "Already Have an Account? Login",
+              style: TextStyle(fontSize: 16, color: Color(0xff858FAD)),
             ),
           ),
         ],
