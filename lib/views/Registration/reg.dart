@@ -22,17 +22,50 @@ class _regState extends State<reg> {
       ),
       body: ListView(
         children: [
-          Column(
-            children: [
-              Text(
-                "Register",
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.w600,
-                  color: Color(0xff55AB60),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 18,vertical: 5),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Text(
+                    "Register",
+                    style: TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xff55AB60),
+                    ),
+                  ),
                 ),
-              ),
-            ],
+                //Hint text
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Text(
+                    "Email id",
+                    style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18),
+                  ),
+                ),
+                //Textfield
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "Enter your email id",
+                      filled: true,
+                      fillColor: Colors.white,
+                      enabledBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+                        borderSide: BorderSide(color: Colors.black),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),
