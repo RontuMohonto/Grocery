@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_demo/views/Login/login.dart';
+import 'package:grocery_demo/views/Registration/reg.dart';
 import 'package:grocery_demo/views/splash.dart';
 void main (){
   runApp(Myapp());
@@ -13,7 +14,7 @@ class Myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: login(),
+      home: reg(),
     );
   }
 }

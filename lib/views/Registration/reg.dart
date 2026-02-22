@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class reg extends StatefulWidget {
   const reg({super.key});
 
@@ -12,7 +11,15 @@ class _regState extends State<reg> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      //Appbar
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        centerTitle: true,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [Image(image: AssetImage("assets/images/Appbar.jpg"))],
+        ),
+      ),
     );
   }
 }
