@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_demo/views/login.dart';
+import 'package:grocery_demo/views/Login/login.dart';
 import 'package:grocery_demo/views/splash.dart';
 void main (){
   runApp(Myapp());

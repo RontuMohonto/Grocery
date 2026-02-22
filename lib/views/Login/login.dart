@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:grocery_demo/widgets/button_widget.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -117,27 +118,10 @@ class _loginState extends State<login> {
                     vertical: 10,
                   ),
                   child: InkWell(
-                    onTap: (){
+                    onTap: () {
                       log("=========Pressed");
                     },
-                    child: Container(
-                      child: Center(
-                        child: Text(
-                          "Login",
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                      height: 50,
-                      width: 396,
-                      decoration: BoxDecoration(
-                        color: Color(0xff55AB60),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
+                    child: button(name: 'Login',),
                   ),
                 ),
                 Padding(
@@ -225,9 +209,7 @@ class _loginState extends State<login> {
                   ),
                 ),
                 //dont you have an account ?
-                SizedBox(
-                  height: 10,
-                ),
+                SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
