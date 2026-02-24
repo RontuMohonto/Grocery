@@ -202,9 +202,18 @@ class _regState extends State<reg> {
 
           // Bottom Text
           Center(
-            child: Text(
-              "Already Have an Account? Login",
-              style: TextStyle(fontSize: 16, color: Color(0xff858FAD)),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Already Have an Account?",
+                  style: TextStyle(fontSize: 16, color: Color(0xff858FAD)),
+                ),
+                Text(
+                  " Login",
+                  style: TextStyle(fontSize: 16, color: Colors.black),
+                ),
+              ],
             ),
           ),
 

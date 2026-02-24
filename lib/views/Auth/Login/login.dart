@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:grocery_demo/views/Registration/reg.dart';
 import 'package:grocery_demo/widgets/button_widget.dart';
 
 class login extends StatefulWidget {
