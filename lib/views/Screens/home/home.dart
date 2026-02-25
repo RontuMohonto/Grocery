@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class home extends StatefulWidget {
-  const home({super.key});
+    home({super.key});
 
   @override
   State<home> createState() => _homeState();
+
+  List<String> categories = ["Groecries", "Vegetables", "Fruits", "Beverages"];
 }
 
 class _homeState extends State<home> {
@@ -22,12 +24,17 @@ class _homeState extends State<home> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          Container(
-            height: 150,
-            width: double.infinity,
-            color: Colors.blue,
-          )
-
+          ListView.builder(
+              itemCount: 5,
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context,index){
+            return Container(
+              height: 50,
+              width: 50,
+              color: Colors.red,
+            );
+          })
         ],
       )
     );

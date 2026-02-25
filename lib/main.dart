@@ -1,11 +1,12 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:grocery_demo/tttttttttttttt.dart';
 import 'package:grocery_demo/views/Auth/Registration/reg.dart';
 import 'package:grocery_demo/views/Screens/home/home.dart';
 import 'package:grocery_demo/views/splash.dart';
 void main (){
-  runApp(Myapp());
+  runApp( const Myapp());
 }
 
 
