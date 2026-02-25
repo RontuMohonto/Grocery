@@ -42,10 +42,13 @@ class _homeState extends State<home> {
               return Padding(
                 padding: const EdgeInsets.all(14),
                 child: Container(
-                  margin: EdgeInsets.only(right: 15),
-                  height: 50,
-                  width: 87,
-                  color: Colors.red,
+                  margin: EdgeInsets.only(right: 12,top: 8),
+                  height: 85,
+                  width: 95,
+                  decoration: BoxDecoration(
+                    color: Color(0xffF2FCF4),
+                    borderRadius: BorderRadius.circular(15)
+                  ),
                 ),
               );
             }),
