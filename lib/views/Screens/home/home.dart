@@ -40,13 +40,14 @@ class _homeState extends State<home> {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context,index){
               return Padding(
-                padding: const EdgeInsets.all(14),
+                padding: const EdgeInsets.all(16),
                 child: Container(
                   margin: EdgeInsets.only(right: 12,top: 8),
-                  height: 85,
-                  width: 95,
+                  height: 20,
+                  width: 87,
                   decoration: BoxDecoration(
-                    color: Color(0xffF2FCF4),
+                    //color: Color(0xffF2FCF4),
+                    color: Colors.blue,
                     borderRadius: BorderRadius.circular(15)
                   ),
                 ),
