@@ -23,19 +23,30 @@ class _homeState extends State<home> {
       ),
       backgroundColor: Colors.white,
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          //categories
+          Container(
+            height: 154,
+            width: double.infinity,
+            child: Image(image: AssetImage("assets/images/slider.jpg")),
+          ),
+         // categories
           SizedBox(
-            height: 50,
+            height: 125,
             child: ListView.builder(
+
                 itemCount: 5,
                 shrinkWrap: true,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context,index){
-              return Container(
-                height: 50,
-                width: 50,
-                color: Colors.red,
+              return Padding(
+                padding: const EdgeInsets.all(14),
+                child: Container(
+                  margin: EdgeInsets.only(right: 15),
+                  height: 50,
+                  width: 87,
+                  color: Colors.red,
+                ),
               );
             }),
           )
