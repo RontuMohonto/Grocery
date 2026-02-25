@@ -24,17 +24,21 @@ class _homeState extends State<home> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          ListView.builder(
-              itemCount: 5,
-              shrinkWrap: true,
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context,index){
-            return Container(
-              height: 50,
-              width: 50,
-              color: Colors.red,
-            );
-          })
+          //categories
+          SizedBox(
+            height: 50,
+            child: ListView.builder(
+                itemCount: 5,
+                shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context,index){
+              return Container(
+                height: 50,
+                width: 50,
+                color: Colors.red,
+              );
+            }),
+          )
         ],
       )
     );
