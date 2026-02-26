@@ -32,7 +32,7 @@ class _homeState extends State<home> {
           ),
           // categories
           SizedBox(
-            height: 138,
+            height: 150,
             child: ListView.builder(
               itemCount: 5,
               shrinkWrap: true,
@@ -42,7 +42,6 @@ class _homeState extends State<home> {
                   padding: const EdgeInsets.all(16),
                   child: Container(
                     margin: EdgeInsets.only(right: 3, top: 8),
-                    height: 200,
                     width: 90,
                     decoration: BoxDecoration(
                       //color: Color(0xffF2FCF4),
@@ -52,13 +51,17 @@ class _homeState extends State<home> {
                     child: Column(
                       children: [
                         Container(
-                          height: 89,
+                          height: 80,
                           width: 90,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: Colors.yellow
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20),
+                              bottomLeft: Radius.circular(20),
+                            ),
+                            color: Colors.yellow,
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
