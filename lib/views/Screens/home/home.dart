@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class home extends StatefulWidget {
-    home({super.key});
+  home({super.key});
 
   @override
   State<home> createState() => _homeState();
@@ -30,32 +30,32 @@ class _homeState extends State<home> {
             width: double.infinity,
             child: Image(image: AssetImage("assets/images/slider.jpg")),
           ),
-         // categories
+          // categories
           SizedBox(
-            height: 125,
+            height: 138,
             child: ListView.builder(
-
-                itemCount: 5,
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context,index){
-              return Padding(
-                padding: const EdgeInsets.all(16),
-                child: Container(
-                  margin: EdgeInsets.only(right: 12,top: 8),
-                  height: 20,
-                  width: 87,
-                  decoration: BoxDecoration(
-                    //color: Color(0xffF2FCF4),
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(15)
+              itemCount: 5,
+              shrinkWrap: true,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.all(16),
+                  child: Container(
+                    margin: EdgeInsets.only(right: 3, top: 8),
+                    height: 200,
+                    width: 90,
+                    decoration: BoxDecoration(
+                      //color: Color(0xffF2FCF4),
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
                   ),
-                ),
-              );
-            }),
-          )
+                );
+              },
+            ),
+          ),
         ],
-      )
+      ),
     );
   }
 }
