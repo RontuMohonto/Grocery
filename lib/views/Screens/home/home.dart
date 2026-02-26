@@ -9,9 +9,9 @@ class home extends StatefulWidget {
   List<String> categories = ["Groecries", "Vegetables", "Fruits", "Beverages"];
   List<String> img = [
     "assets/images/groceries.jpg",
-    "assets/images/groceries.jpg",
-    "assets/images/groceries.jpg",
-    "assets/images/groceries.jpg",
+    "assets/images/Vegetables.jpg",
+    "assets/images/fruits.jpg",
+    "assets/images/Beverages.jpg",
   ];
 }
 
@@ -41,7 +41,7 @@ class _homeState extends State<home> {
           ),
           // categories
           SizedBox(
-            height: 150,
+            height: 175,
             child: ListView.builder(
               itemCount: widget.categories.length,
               shrinkWrap: true,
@@ -50,7 +50,7 @@ class _homeState extends State<home> {
                 return Padding(
                   padding: const EdgeInsets.all(16),
                   child: Container(
-                    margin: EdgeInsets.only(right: 3, top: 8),
+                    margin: EdgeInsets.only(top: 8),
                     width: 90,
                     decoration: BoxDecoration(
                       //color: Color(0xffF2FCF4),
@@ -60,17 +60,18 @@ class _homeState extends State<home> {
                     child: Column(
                       children: [
                         Container(
-                          height: 80,
+                          height: 95,
                           width: 90,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(15),
                               topRight: Radius.circular(15),
                             ),
-                            color: Color(0xffF2FCF4),
+                            //color: Color(0xffF2FCF4),
+                            color: Colors.white
                           ),
                           child: Image(
-                            image: AssetImage("assets/images/groceries.jpg"),
+                            image: AssetImage(widget.img[index]),
                           ),
                         ),
                         Padding(
