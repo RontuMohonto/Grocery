@@ -25,16 +25,19 @@ class _homeState extends State<home> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Container(
-            height: 154,
-            width: double.infinity,
-            child: Image(image: AssetImage("assets/images/slider.jpg")),
+          Padding(
+            padding: const EdgeInsets.only(top: 15),
+            child: Container(
+              height: 154,
+              width: double.infinity,
+              child: Image(image: AssetImage("assets/images/slider.jpg")),
+            ),
           ),
           // categories
           SizedBox(
             height: 150,
             child: ListView.builder(
-              itemCount: 5,
+              itemCount: widget.categories.length,
               shrinkWrap: true,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
@@ -45,7 +48,7 @@ class _homeState extends State<home> {
                     width: 90,
                     decoration: BoxDecoration(
                       //color: Color(0xffF2FCF4),
-                      color: Colors.blue,
+                      color: Color(0xff55AB60),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Column(
@@ -58,7 +61,19 @@ class _homeState extends State<home> {
                               topLeft: Radius.circular(15),
                               topRight: Radius.circular(15),
                             ),
-                            color: Colors.yellow,
+                            color: Color(0xffF2FCF4),
+                          ),
+                          child: Image(image: AssetImage("assets/images/groceries.jpg")),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(4),
+                          child: Text(
+                            widget.categories[index],
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 15,
+                            ),
                           ),
                         ),
                       ],
