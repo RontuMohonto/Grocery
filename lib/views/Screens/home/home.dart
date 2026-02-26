@@ -7,6 +7,12 @@ class home extends StatefulWidget {
   State<home> createState() => _homeState();
 
   List<String> categories = ["Groecries", "Vegetables", "Fruits", "Beverages"];
+  List<String> img = [
+    "assets/images/groceries.jpg",
+    "assets/images/groceries.jpg",
+    "assets/images/groceries.jpg",
+    "assets/images/groceries.jpg",
+  ];
 }
 
 class _homeState extends State<home> {
@@ -63,7 +69,9 @@ class _homeState extends State<home> {
                             ),
                             color: Color(0xffF2FCF4),
                           ),
-                          child: Image(image: AssetImage("assets/images/groceries.jpg")),
+                          child: Image(
+                            image: AssetImage("assets/images/groceries.jpg"),
+                          ),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(4),
