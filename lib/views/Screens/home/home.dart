@@ -49,6 +49,18 @@ class _homeState extends State<home> {
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(15),
                     ),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 89,
+                          width: 90,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15),
+                            color: Colors.yellow
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 );
               },
