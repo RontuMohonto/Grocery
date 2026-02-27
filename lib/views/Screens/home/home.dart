@@ -114,8 +114,6 @@ class _homeState extends State<home> {
                             top: 20,
                             left: 1,
                             child: Container(
-                              height: 50,width: 50,
-
                               color: Color(0xff54A95F),
                               child: Image(
                                 image: AssetImage("assets/images/tag.jpg"),
@@ -130,15 +128,48 @@ class _homeState extends State<home> {
                       margin: EdgeInsets.only(right: 20),
                       height: 192,
                       width: 162,
-                      color: Colors.red,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.yellow,
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 20,
+                            left: 1,
+                            child: Container(
+                              color: Color(0xff54A95F),
+                              child: Image(
+                                image: AssetImage("assets/images/tag.jpg"),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-
                     Container(
+                      margin: EdgeInsets.only(right: 20),
                       height: 192,
                       width: 162,
-                      color: Colors.red,
-                    ),
-                  ],
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.yellow,
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 20,
+                            left: 1,
+                            child: Container(
+                              color: Color(0xff54A95F),
+                              child: Image(
+                                image: AssetImage("assets/images/tag.jpg"),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),                  ],
                 ),
               ),
             )
