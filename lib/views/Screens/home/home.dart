@@ -114,6 +114,8 @@ class _homeState extends State<home> {
                             top: 20,
                             left: 1,
                             child: Container(
+                              height: 50,width: 50,
+
                               color: Color(0xff54A95F),
                               child: Image(
                                 image: AssetImage("assets/images/tag.jpg"),
