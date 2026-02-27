@@ -96,24 +96,50 @@ class _homeState extends State<home> {
             scrollDirection: Axis.horizontal,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-              child: Row(
-                spacing: 20,
-                children: [
-                  Container(
-                    height: 192,
-                    width: 162,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Colors.red,
-
-                      //color: Color(0xffF2FCF4),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(right: 20),
+                      height: 192,
+                      width: 162,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.yellow,
+                      ),
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 20,
+                            left: 1,
+                            child: Container(
+                              color: Color(0xff54A95F),
+                              child: Image(
+                                image: AssetImage("assets/images/tag.jpg"),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  Container(height: 192, width: 162, color: Colors.red),
-                  Container(height: 192, width: 162, color: Colors.red),
-                ],
+
+                    Container(
+                      margin: EdgeInsets.only(right: 20),
+                      height: 192,
+                      width: 162,
+                      color: Colors.red,
+                    ),
+
+                    Container(
+                      height: 192,
+                      width: 162,
+                      color: Colors.red,
+                    ),
+                  ],
+                ),
               ),
-            ),
+            )
           ),
         ],
       ),
