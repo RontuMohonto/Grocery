@@ -86,6 +86,17 @@ class _homeState extends State<home> {
                             ),
                           ),
                         ),
+                        ListView.builder(
+                            itemCount: 5,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (context,index){
+                              return Container(
+                                height: 192,
+                                width: 162,
+                                color: Colors.red,
+                              );
+                            })
+
                       ],
                     ),
                   ),
@@ -93,16 +104,6 @@ class _homeState extends State<home> {
               },
             ),
           ),
-          ListView.builder(
-              itemCount: 5,
-              scrollDirection: Axis.horizontal,
-              itemBuilder: (context,index){
-                return Container(
-                  height: 192,
-                  width: 162,
-                  color: Colors.red,
-                );
-              })
         ],
       ),
     );
