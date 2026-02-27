@@ -58,6 +58,8 @@ class _homeState extends State<home> {
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Column(
+
+                      //background box
                       children: [
                         Container(
                           height: 105,
@@ -68,12 +70,11 @@ class _homeState extends State<home> {
                               topRight: Radius.circular(15),
                             ),
                             //color: Color(0xffF2FCF4),
-                            color: Colors.white
+                            color: Colors.white,
                           ),
-                          child: Image(
-                            image: AssetImage(widget.img[index]),
-                          ),
+                          child: Image(image: AssetImage(widget.img[index])),
                         ),
+                        //Hint text
                         Padding(
                           padding: const EdgeInsets.all(4),
                           child: Text(
@@ -92,6 +93,16 @@ class _homeState extends State<home> {
               },
             ),
           ),
+          ListView.builder(
+              itemCount: 5,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context,index){
+                return Container(
+                  height: 192,
+                  width: 162,
+                  color: Colors.red,
+                );
+              })
         ],
       ),
     );
