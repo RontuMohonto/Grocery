@@ -94,20 +94,25 @@ class _homeState extends State<home> {
           ),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            child: Row(
-              spacing: 20,
-              children: [
-                Container(
-                  height: 192,
-                  width: 162,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Color(0xffF2FCF4),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+              child: Row(
+                spacing: 20,
+                children: [
+                  Container(
+                    height: 192,
+                    width: 162,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Colors.red,
+
+                      //color: Color(0xffF2FCF4),
+                    ),
                   ),
-                ),
-                Container(height: 192, width: 162, color: Colors.red),
-                Container(height: 192, width: 162, color: Colors.red),
-              ],
+                  Container(height: 192, width: 162, color: Colors.red),
+                  Container(height: 192, width: 162, color: Colors.red),
+                ],
+              ),
             ),
           ),
         ],
