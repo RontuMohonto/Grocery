@@ -60,7 +60,7 @@ class _homeState extends State<home> {
                     child: Column(
                       children: [
                         Container(
-                          height: 95,
+                          height: 105,
                           width: 90,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.only(
