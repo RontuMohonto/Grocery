@@ -85,7 +85,6 @@ class _homeState extends State<home> {
                             ),
                           ),
                         ),
-                     
                       ],
                     ),
                   ),
@@ -93,11 +92,24 @@ class _homeState extends State<home> {
               },
             ),
           ),
-          Row(
-            children: [
-
-            ],
-          )
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              spacing: 20,
+              children: [
+                Container(
+                  height: 192,
+                  width: 162,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Color(0xffF2FCF4),
+                  ),
+                ),
+                Container(height: 192, width: 162, color: Colors.red),
+                Container(height: 192, width: 162, color: Colors.red),
+              ],
+            ),
+          ),
         ],
       ),
     );
