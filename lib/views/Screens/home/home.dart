@@ -106,7 +106,7 @@ class _homeState extends State<home> {
                       width: 162,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.yellow,
+                        color: Color(0xffF2FCF4)
                       ),
                       child: Stack(
                         children: [
