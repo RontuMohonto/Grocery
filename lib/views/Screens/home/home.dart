@@ -132,11 +132,14 @@ class _homeState extends State<home> {
                               ),
                             ),
                           ),
-                          Text(
-                            "\$3/kg",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "\$3/kg",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                         ],
