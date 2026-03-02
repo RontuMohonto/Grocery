@@ -123,7 +123,7 @@ class _homeState extends State<home> {
                         ],
                       ),
                     ),
-
+//other boxes
                     Container(
                       margin: EdgeInsets.only(right: 20),
                       height: 192,
