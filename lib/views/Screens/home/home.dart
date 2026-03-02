@@ -101,120 +101,18 @@ class _homeState extends State<home> {
                 child: Row(
                   children: [
                     Container(
-                      height: 200,
-                      width: 160,
-                      decoration: BoxDecoration(
-                        color: const Color(0xffE9EFEA),
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      child: Stack(
-                        children: [
-
-                          Positioned(
-                            top: 10,
-                            left: 0,
-                            child: ClipRRect(
-                              borderRadius: const BorderRadius.only(
-                                topLeft: Radius.circular(15),
-                              ),
-                              child: Image.asset(
-                                "assets/images/tag.jpg",
-                                height: 45,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-
-                          Align(
-                            alignment: Alignment.topCenter,
-                            child: Padding(
-                              padding: const EdgeInsets.only(top: 35),
-                              child: Image.asset(
-                                "assets/images/fortune.jpg",
-                                height: 90,
-                                fit: BoxFit.contain,
-                              ),
-                            ),
-                          ),
-
-                          Positioned(
-                            bottom: 15,
-                            left: 12,
-                            right: 12,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Text(
-                                  "Fortune rice",
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                SizedBox(height: 4),
-                                Text(
-                                  "\$3/kg",
-                                  style: TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.w700,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
+                      height: 192,
+                      width: 162,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.red
+                    ),
                     ),
 
 
 
                     //other boxes
-                    Container(
-                      margin: EdgeInsets.only(right: 20),
-                      height: 192,
-                      width: 162,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.yellow,
-                      ),
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            top: 20,
-                            left: 1,
-                            child: Container(
-                              color: Color(0xff54A95F),
-                              child: Image(
-                                image: AssetImage("assets/images/tag.jpg"),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(right: 20),
-                      height: 192,
-                      width: 162,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.yellow,
-                      ),
-                      child: Stack(
-                        children: [
-                          Positioned(
-                            top: 20,
-                            left: 1,
-                            child: Container(
-                              color: Color(0xff54A95F),
-                              child: Image(
-                                image: AssetImage("assets/images/tag.jpg"),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+
                   ],
                 ),
               ),
