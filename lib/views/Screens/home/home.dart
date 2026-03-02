@@ -92,6 +92,28 @@ class _homeState extends State<home> {
               },
             ),
           ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Top Products",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                ),
+                Text(
+                  "Explore All",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xff55AB60),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // products container
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Padding(
@@ -100,8 +122,6 @@ class _homeState extends State<home> {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   spacing: 18,
-
-                 // products container
                   children: [
                     Container(
                       //height: 192,
@@ -238,7 +258,6 @@ class _homeState extends State<home> {
                         ],
                       ),
                     ),
-
                   ],
                 ),
               ),
