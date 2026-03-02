@@ -106,25 +106,30 @@ class _homeState extends State<home> {
                       width: 162,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Color(0xffF2FCF4)
+                        color: Color(0xffF2FCF4),
                       ),
+
                       //tag container
-                      child: Stack(
+                      child: Column(
                         children: [
-                          Positioned(
-                            top: 20,
-                            left: 1,
-                            child: Container(
-                              color: Color(0xff54A95F),
-                              child: Image(
-                                image: AssetImage("assets/images/tag.jpg"),
+                          Stack(
+                            children: [
+                              Positioned(
+                                top: 20,
+                                left: 1,
+                                child: Container(
+                                  color: Color(0xff54A95F),
+                                  child: Image(
+                                    image: AssetImage("assets/images/tag.jpg"),
+                                  ),
+                                ),
                               ),
-                            ),
+                            ],
                           ),
                         ],
                       ),
                     ),
-//other boxes
+                    //other boxes
                     Container(
                       margin: EdgeInsets.only(right: 20),
                       height: 192,
@@ -170,10 +175,11 @@ class _homeState extends State<home> {
                           ),
                         ],
                       ),
-                    ),                  ],
+                    ),
+                  ],
                 ),
               ),
-            )
+            ),
           ),
         ],
       ),
