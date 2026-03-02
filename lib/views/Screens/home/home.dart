@@ -107,6 +107,15 @@ class _homeState extends State<home> {
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.red
                     ),
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 145,
+                            width: 170,
+                            child: Image(image: AssetImage("assets/images/fff.jpg")),
+                          )
+                        ],
+                      ),
                     ),
 
 
