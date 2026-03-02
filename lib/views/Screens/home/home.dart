@@ -101,7 +101,7 @@ class _homeState extends State<home> {
                 child: Row(
                   children: [
                     Container(
-                      height: 192,
+                      //height: 192,
                       width: 162,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
@@ -123,7 +123,7 @@ class _homeState extends State<home> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.only(left: 10),
                             child: Text(
                               "Fortune rice",
                               style: TextStyle(
@@ -133,7 +133,7 @@ class _homeState extends State<home> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: const EdgeInsets.only(left: 10),
                             child: Text(
                               "\$3/kg",
                               style: TextStyle(
