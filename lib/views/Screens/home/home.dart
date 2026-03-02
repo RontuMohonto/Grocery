@@ -108,6 +108,7 @@ class _homeState extends State<home> {
                         borderRadius: BorderRadius.circular(20),
                         color: Color(0xffF2FCF4)
                       ),
+                      //tag container
                       child: Stack(
                         children: [
                           Positioned(
