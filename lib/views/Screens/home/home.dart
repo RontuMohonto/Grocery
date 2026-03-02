@@ -105,14 +105,18 @@ class _homeState extends State<home> {
                       width: 162,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
-                      color: Colors.red
+                      color: Color(0xffF2FCF4)
                     ),
                       child: Column(
                         children: [
+                          //image container
                           Container(
                             height: 145,
                             width: 170,
-                            child: Image(image: AssetImage("assets/images/fff.jpg")),
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Image.asset("assets/images/fruits.jpg",fit: BoxFit.fill,),
+                            )
                           )
                         ],
                       ),
