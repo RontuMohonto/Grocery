@@ -268,6 +268,18 @@ class _homeState extends State<home> {
               ),
             ),
             //second line
+
+
+            //bannertwo
+            Padding(
+              padding: const EdgeInsets.only(top: 15),
+              child: Container(
+                height: 154,
+                width: double.infinity,
+                child: Image(image: AssetImage("assets/images/bannertwo.jpg")),
+              ),
+            ),
+
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Row(
@@ -286,16 +298,6 @@ class _homeState extends State<home> {
                     ),
                   ),
                 ],
-              ),
-            ),
-
-            //bannertwo
-            Padding(
-              padding: const EdgeInsets.only(top: 15),
-              child: Container(
-                height: 154,
-                width: double.infinity,
-                child: Image(image: AssetImage("assets/images/bannertwo.jpg")),
               ),
             ),
             SingleChildScrollView(
@@ -448,6 +450,26 @@ class _homeState extends State<home> {
                     ],
                   ),
                 ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Deals of the week",
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                  ),
+                  Text(
+                    "Explore All",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xff55AB60),
+                    ),
+                  ),
+                ],
               ),
             ),
             SingleChildScrollView(
