@@ -264,6 +264,27 @@ class _homeState extends State<home> {
             ),
           ),
 
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Deals of the week",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
+                ),
+                Text(
+                  "Explore All",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xff55AB60),
+                  ),
+                ),
+              ],
+            ),
+          ),
+
           //bannertwo
           Padding(
             padding: const EdgeInsets.only(top: 15),
@@ -273,6 +294,7 @@ class _homeState extends State<home> {
               child: Image(image: AssetImage("assets/images/bannertwo.jpg")),
             ),
           ),
+
         ],
       ),
     );
