@@ -268,7 +268,7 @@ class _homeState extends State<home> {
             child: Container(
               height: 154,
               width: double.infinity,
-              child: Image(image: AssetImage("assets/images/slider.jpg")),
+              child: Image(image: AssetImage("assets/images/bannertwo.jpg")),
             ),
           ),
         ],
