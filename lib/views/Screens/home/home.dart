@@ -92,7 +92,7 @@ class _homeState extends State<home> {
               },
             ),
           ),
- //New line
+          //New line
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Row(
@@ -261,6 +261,14 @@ class _homeState extends State<home> {
                   ],
                 ),
               ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 15),
+            child: Container(
+              height: 154,
+              width: double.infinity,
+              child: Image(image: AssetImage("assets/images/slider.jpg")),
             ),
           ),
         ],
